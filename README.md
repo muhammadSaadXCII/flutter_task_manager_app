@@ -4,9 +4,9 @@ A simple and intuitive task management application built with Flutter. This app 
 
 ## Demo
 
-<video width="100%" controls>
-  <source src="assets/videos/task_manager%20demo%20video.mp4" type="video/mp4">
-</video>
+Watch the demo below:
+
+https://github.com/user-attachments/assets/161952c4-9ae9-4fdb-b57c-3665ad956d54
 
 ## Features
 
