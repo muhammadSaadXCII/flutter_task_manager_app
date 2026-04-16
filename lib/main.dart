@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import './screens/task_home_screen.dart';
+import 'package:provider/provider.dart';
+import 'providers/task_provider.dart';
+import 'screens/task_home_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,11 +12,18 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: "Task Manager",
-      theme: ThemeData(useMaterial3: true, colorSchemeSeed: Colors.indigo),
-      home: const TaskHomeScreen(),
+    return ChangeNotifierProvider(
+      create: (_) => TaskProvider(),
+      child: MaterialApp(
+        debugShowCheckedModeBanner: false,
+        title: 'Task Manager',
+        theme: ThemeData(
+          useMaterial3: true,
+          colorSchemeSeed: Colors.indigo,
+          cardTheme: CardThemeData(surfaceTintColor: Colors.transparent),
+        ),
+        home: const TaskHomeScreen(),
+      ),
     );
   }
 }

@@ -1,60 +1,79 @@
-# Flutter Task Manager App
+# Task Management App
 
-A simple and intuitive task management application built with Flutter. This app allows you to keep track of your daily tasks with ease.
+A modern, cross-platform task management application built with Flutter. This intuitive app helps you organize your daily tasks efficiently, with features for adding, editing, deleting, and tracking task completion. Built with a clean architecture using Provider for state management and Shared Preferences for local data persistence.
 
-## Demo
 
-Watch the demo below:
+## ✨ Features
+
+- **Task Management**: Add, edit, delete, and mark tasks as complete
+- **Data Persistence**: Tasks are saved locally using Shared Preferences
+- **Clean UI**: Modern Material Design interface
+- **State Management**: Uses Provider pattern for efficient state handling
+
+## 🎥 Demo
+
+Watch the demo video to see the app in action:
 
 https://github.com/user-attachments/assets/161952c4-9ae9-4fdb-b57c-3665ad956d54
 
-## Features
 
-*   **Add Tasks:** Quickly add new tasks to your to-do list.
-*   **Delete Tasks:** Remove tasks that are no longer needed.
-*   **Mark as Done:** Toggle the status of your tasks to keep track of your progress.
-*   **Data Persistence:** Your tasks are saved locally on your device, so you won't lose them.
-
-## Getting Started
-
-To get a local copy up and running, follow these simple steps.
+## 🚀 Getting Started
 
 ### Prerequisites
 
-*   Flutter SDK: Make sure you have the Flutter SDK installed on your machine. For more information, see the [Flutter documentation](https://flutter.dev/docs/get-started/install).
-*   An editor like Android Studio or VS Code with the Flutter plugin.
+Before you begin, ensure you have the following installed:
+
+- **Flutter SDK** (version 3.0 or higher): [Installation Guide](https://flutter.dev/docs/get-started/install)
+- **Dart SDK** (comes with Flutter)
+- **IDE**: Android Studio, VS Code, or IntelliJ IDEA with Flutter plugin
+- **Device/Emulator**: Android/iOS emulator or physical device
 
 ### Installation
 
-1.  Clone the repo
-    ```sh
-    git clone https://github.com/your_username/flutter_task_manager_app.git
-    ```
-2.  Navigate to the project directory
-    ```sh
-    cd flutter_task_manager_app
-    ```
-3.  Install dependencies
-    ```sh
-    flutter pub get
-    ```
-4.  Run the app
-    ```sh
-    flutter run
-    ```
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/muhammadSaadXCII/flutter_task_manager_app.git
+   cd flutter_task_manager_app
+   ```
 
-## Dependencies
+2. **Install dependencies**
+   ```bash
+   flutter pub get
+   ```
 
-*   [flutter](https://flutter.dev/): The framework for building beautiful, natively compiled applications for mobile, web, and desktop from a single codebase.
-*   [shared_preferences](https://pub.dev/packages/shared_preferences): A Flutter plugin for reading and writing simple key-value pairs.
+3. **Run the app**
+   ```bash
+   flutter run
+   ```
 
-## Project Structure
+## 📖 Usage
+
+1. Launch the app on your device or emulator
+2. Tap the "+" button to add a new task
+3. Enter your task details and save
+4. Mark tasks as complete by tapping the checkbox
+5. Swipe or use the delete button to remove tasks
+6. Use the filter tabs to view all, completed, or pending tasks
+
+## 📦 Dependencies
+
+- [flutter](https://flutter.dev/) - UI framework
+- [shared_preferences](https://pub.dev/packages/shared_preferences) - Local data storage
+- [provider](https://pub.dev/packages/provider) - State management
+
+## 🏗️ Project Structure
 
 ```
-/lib
-|-- /models
-|   |-- task.dart         # Model for individual tasks
-|-- /screens
-|   |-- task_home_screen.dart # Main screen with the task list
-|-- main.dart             # App entry point
+lib/
+├── main.dart                 # App entry point
+├── models/
+│   └── task.dart            # Task data model
+├── providers/
+│   └── task_provider.dart   # State management with Provider
+├── screens/
+│   └── task_home_screen.dart # Main screen
+└── widgets/
+    ├── filter_tabs.dart     # Task filtering tabs
+    ├── stats_bar.dart       # Task statistics
+    └── task_card.dart       # Individual task display
 ```
