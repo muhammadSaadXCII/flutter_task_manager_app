@@ -2,7 +2,6 @@
 
 A modern, cross-platform task management application built with Flutter. This intuitive app helps you organize your daily tasks efficiently, with features for adding, editing, deleting, and tracking task completion. Built with a clean architecture using Provider for state management and Shared Preferences for local data persistence.
 
-
 ## ✨ Features
 
 - **Task Management**: Add, edit, delete, and mark tasks as complete
@@ -14,8 +13,7 @@ A modern, cross-platform task management application built with Flutter. This in
 
 Watch the demo video to see the app in action:
 
-https://github.com/user-attachments/assets/161952c4-9ae9-4fdb-b57c-3665ad956d54
-
+https://github.com/user-attachments/assets/d16f72d6-50fc-4d47-a31e-3efd038813c3
 
 ## 🚀 Getting Started
 
